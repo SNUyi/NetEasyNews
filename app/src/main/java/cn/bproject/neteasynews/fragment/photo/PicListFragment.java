@@ -47,7 +47,7 @@ import cn.bproject.neteasynews.widget.LoadingPage;
 
 public class PicListFragment extends BaseFragment implements DefineView {
     private String tid; // 图片频道id，用于打开新闻详情页
-    private String column;  //   图片的分类
+    private String column;  // 图片的分类
 
     private View mView;
 

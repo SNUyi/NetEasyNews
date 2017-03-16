@@ -107,7 +107,4 @@ public class PhotoFragment extends BaseFragment {
             }
         });
     }
-
-
-
 }
