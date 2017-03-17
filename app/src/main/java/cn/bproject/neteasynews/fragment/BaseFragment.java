@@ -1,9 +1,13 @@
 package cn.bproject.neteasynews.fragment;
 
+import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.TextView;
 
 import cn.bproject.neteasynews.MyApplication;
@@ -88,5 +92,13 @@ public abstract class BaseFragment extends Fragment implements DefineView {
     public static long getUpdateTime(String key, long defValue) {
         long saveTime = PrefUtils.getLong(MyApplication.getContext(), "save_time", key, defValue);
         return saveTime;
+    }
+
+
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        LogUtils.i("SUNny", getClass().toString());
     }
 }
