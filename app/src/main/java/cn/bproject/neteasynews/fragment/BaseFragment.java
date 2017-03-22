@@ -94,11 +94,9 @@ public abstract class BaseFragment extends Fragment implements DefineView {
         return saveTime;
     }
 
-
-
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        LogUtils.i("SUNny", getClass().toString());
+        LogUtils.i("SUNny", getClass().getSimpleName());
     }
 }

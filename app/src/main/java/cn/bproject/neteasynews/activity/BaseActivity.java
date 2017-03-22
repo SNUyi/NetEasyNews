@@ -27,6 +27,6 @@ public class BaseActivity extends AppCompatActivity{
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        LogUtils.i("SUNny", this.getLocalClassName());
+        LogUtils.i("SUNny", getClass().getSimpleName());
     }
 }

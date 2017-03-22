@@ -58,21 +58,23 @@ public class MainActivity extends BaseActivity {
 
 
         // 设置FragmentTab
-        mInflater = LayoutInflater.from(this);
-        mTabHost = (FragmentTabHost)findViewById(android.R.id.tabhost);
-        mTabHost.setup(this, getSupportFragmentManager(), R.id.realtabcontent);
+        mInflater = LayoutInflater.from(this);//加载布局管理器
+        /*实例化FragmentTabHost对象并进行绑定*/
+        mTabHost = (FragmentTabHost)findViewById(android.R.id.tabhost);//绑定tabhost
+        mTabHost.setup(this, getSupportFragmentManager(), R.id.realtabcontent);//绑定layout
 
 
         for (BottomTab bottomTab : mBottomTabs){
-
+            /*新建Tabspec选项卡并设置Tab菜单栏的内容*/
             TabHost.TabSpec tabSpec = mTabHost.newTabSpec(getString(bottomTab.getTitle()));
 
             tabSpec.setIndicator(buildIndicator(bottomTab));
-
+            // 将Tab按钮添加进Tab选项卡中
             mTabHost.addTab(tabSpec, bottomTab.getFragment(),null);
 
         }
 
+        /*实现setOnTabChangedListener接口,目的是为监听界面切换），然后实现TabHost里面图片文字的选中状态切换*/
         mTabHost.setOnTabChangedListener(new TabHost.OnTabChangeListener() {
             @Override
             public void onTabChanged(String tabId) {
