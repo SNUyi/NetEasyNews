@@ -49,7 +49,7 @@ public class NewsListFragment extends BaseFragment {
 
     private final String TAG = NewsListFragment.class.getSimpleName();
     private static final String KEY = "TID";
-    private String mUrl;        // 请求网络的url
+    private String mUrl; // 请求网络的url
     private String tid; // 栏目频道id
 
     private View mView;     // 布局视图
@@ -64,7 +64,7 @@ public class NewsListFragment extends BaseFragment {
     private int mStartIndex = 0;    // 请求数据的起始参数
     public ThreadManager.ThreadPool mThreadPool; // 线程池
     private boolean isPullRefresh;  // 判断当前是下拉刷新还是上拉刷新
-    private boolean isShowCache = false; // 是否有缓存数据被展示
+    private boolean isShowCache = false; //是否有缓存数据被展示
 
     private boolean isConnectState = false;  // 判断当前是否在联网刷新, false表示当前没有联网刷新
 

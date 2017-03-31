@@ -67,7 +67,8 @@ public class NewsFragment extends BaseFragment {
         return mView;
     }
 
-    @Override
+
+        @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         initView();
@@ -76,7 +77,7 @@ public class NewsFragment extends BaseFragment {
 
     @Override
     public void initView() {
-        mTabLayout = (TabLayout) mView.findViewById(tab_layout);
+        mTabLayout = (TabLayout) mView.findViewById(R.id.tab_layout);
         mNewsViewpager = (ViewPager) mView.findViewById(R.id.news_viewpager);
         mChange_channel = (ImageButton) mView.findViewById(R.id.change_channel);
 
@@ -84,6 +85,7 @@ public class NewsFragment extends BaseFragment {
         initValidata();
         initListener();
     }
+
 
     @Override
     public void initValidata() {

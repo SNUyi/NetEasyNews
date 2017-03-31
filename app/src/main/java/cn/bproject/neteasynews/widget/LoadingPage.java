@@ -10,7 +10,7 @@ import cn.bproject.neteasynews.R;
 
 /**
  * 根据当前状态来显示不同页面的自定义控件
- * <p>
+ *
  * - 未加载 - 加载中 - 加载失败 - 数据为空 - 加载成功
  */
 public class LoadingPage extends FrameLayout {
