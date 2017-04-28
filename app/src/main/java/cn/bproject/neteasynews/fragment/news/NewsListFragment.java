@@ -1,5 +1,6 @@
 package cn.bproject.neteasynews.fragment.news;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -320,7 +321,7 @@ public class NewsListFragment extends BaseFragment {
         }
     }
 
-    // 上拉刷新
+    // 上拉加载
     public void PullUpToRefresh() {
         if (!isConnectState) {
             isConnectState = true;
