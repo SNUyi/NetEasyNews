@@ -2,7 +2,9 @@ package cn.bproject.neteasynews.Utils;
 
 import android.util.Log;
 
-
+/**
+ * 输出日志工具
+ */
 public class LogUtils {
     /**
      * 日志输出级别NONE

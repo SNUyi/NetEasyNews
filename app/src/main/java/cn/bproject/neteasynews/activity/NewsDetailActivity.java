@@ -223,7 +223,7 @@ public class NewsDetailActivity extends BaseActivity implements DefineView {
                     "margin-right:15px;" +
                     "margin-left:15px;" +
                     "margin-top:15px;" +
-                    "font-size:24px;" +
+                    "font-size:48px;" +
                     "}" +
                     "</style>";
             String html = "<html><header>" + css + "</header><body>" + body + "</body></html>";

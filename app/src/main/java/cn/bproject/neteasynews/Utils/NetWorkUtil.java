@@ -74,7 +74,8 @@ public class NetWorkUtil {
      *
      * @param context
      * @return
-     */    public static int getConnectedType(Context context) {
+     */
+    public static int getConnectedType(Context context) {
         if (context != null) {
             //获取手机所有连接管理对象
             ConnectivityManager manager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
