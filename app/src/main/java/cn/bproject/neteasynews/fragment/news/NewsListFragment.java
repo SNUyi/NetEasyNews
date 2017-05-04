@@ -320,7 +320,7 @@ public class NewsListFragment extends BaseFragment {
         }
     }
 
-    // 上拉刷新
+    // 上拉加载
     public void PullUpToRefresh() {
         if (!isConnectState) {
             isConnectState = true;
