@@ -32,8 +32,6 @@ import cn.bproject.neteasynews.activity.ChannelManagerActivity;
 import cn.bproject.neteasynews.adapter.FixedPagerAdapter;
 import cn.bproject.neteasynews.fragment.news.NewsListFragment;
 
-import static cn.bproject.neteasynews.R.id.tab_layout;
-
 /**
  * Created by Administrator on 2016/12/24.
  * 新闻模块

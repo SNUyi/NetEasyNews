@@ -92,7 +92,7 @@ public class NewsDetailActivity extends BaseActivity implements DefineView {
         tp.setFakeBoldText(true);
         details_name = (TextView) this.findViewById(R.id.details_name);
         details_time = (TextView) this.findViewById(R.id.details_time);
-        mWebView = (WebView) this.findViewById(details_content);
+        mWebView = (WebView) this.findViewById(R.id.details_content);
 
         showLoadingPage();
     }
