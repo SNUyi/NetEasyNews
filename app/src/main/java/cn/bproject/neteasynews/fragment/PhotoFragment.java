@@ -54,7 +54,7 @@ public class PhotoFragment extends BaseFragment {
 
     @Override
     public void initView() {
-        mTabLayout = (TabLayout) mView.findViewById(tab_layout);
+        mTabLayout = (TabLayout) mView.findViewById(R.id.tab_layout);
         mNewsViewpager = (ViewPager) mView.findViewById(R.id.news_viewpager);
         mView.findViewById(R.id.change_channel).setVisibility(View.GONE);
         channelBeanList = CategoryDataUtils.getPicCategoryBeans();
